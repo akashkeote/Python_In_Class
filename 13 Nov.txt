@@ -1,0 +1,116 @@
+# Programming Basics
+
+## Algorithms and Data Structures
+
+- An algorithm is a step-by-step approach for solving a well-defined problem.
+- Evaluate efficiency using time complexity and space complexity.
+- Make solutions readable with:
+  - Comments
+  - Pseudocode
+  - Flowcharts
+  - UML diagrams
+- A good solution should be:
+  - Correct and sound
+  - Reliable and robust
+  - Complete
+  - Modular, reusable, and scalable
+
+## Software Engineering Practices
+
+- RBAC: Role-Based Access Control
+- Logging
+
+## Programming Concepts
+
+- Turing machines and computability
+- Operators and assignment
+- Branching: `if`, `else`, and related constructs
+- Looping: `while`, `for`, and related constructs
+
+## Programming Paradigms
+
+- Batch and procedural programming: Fortran
+- Structured programming: C, with an emphasis on functions
+- Object-oriented programming (OOP)
+- Functional programming:
+      - Lambda functions
+      - `map` and `filter`
+      - Examples: Haskell, ML, and OCaml
+
+## Non-Turing-Complete Languages
+
+- SQL and PL/SQL
+- HTML
+- LaTeX
+
+## Compilation
+
+- Compiled programs are translated into object code or machine code before execution.
+
+## Python
+
+- Interpreted language
+- General-purpose language
+- Supports write once, run anywhere (WORA) in environments with Python installed
+- Can be run from a shell or terminal
+- Includes a rich standard library
+- Has a large developer community
+- Supports multiple programming styles, including procedural, object-oriented, and functional programming
+
+## Data Types
+
+- Integers have unlimited precision in Python.
+- Common built-in data types include:
+      - `int`
+      - `float`
+      - `str`
+      - `bool`
+      - `list`
+      - `tuple`
+      - `dict`
+      - `set`
+
+## Operators
+
+- Arithmetic operators include `+`, `-`, `*`, `/`, `//`, `%`, and `**`.
+- Bitwise operators are supported.
+- Relational operators include:
+      - `<`
+      - `>`
+      - `<=`
+      - `>=`
+      - `==`
+      - `!=`
+- Assignment operators include `=`, `+=`, `-=`, `*=`, `/=`, `//=`, and `**=`.
+
+
+floating point 
+ unlimited
+ arth : //**
+ bitwise not supported
+ rel : < > == != >= <= can be chained
+ assignment = += -= etc
+
+
+char not supported
+bool
+None
+python dont have char 
+it have only strings 
+
+data structure 
+iteraables 
+  string 
+  list heter unlimited mutable
+  tuple heter unlimited wrt tocreation, immutable
+pair
+  dictionary
+    key value pair
+    key must be immutable
+    value can be anything
+    mutable
+
+
+
+
+
