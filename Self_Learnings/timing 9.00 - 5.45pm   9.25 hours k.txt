@@ -1,0 +1,36 @@
+timing 9.00 - 5.45pm   9.25 hours ka timeline
+fa1->50%
+fa2->50%
+fa3->50%
+fa4->50%
+
+fa1 fa2 fa3 test case evaluation based hoge 
+test case passed karna hai 
+nischith.s01@infosys.com
+Cabin L1 111
+
+Track Manager Raghvendra@infosys.com
+FP operations manager Lashmi_DL ; Rekha_Swamy(default) remove her name and apply to Raghavendra@infosys.com
+
+one sesiomn in morning or one session in afternoon half day leave
+one session in afternoon or morning then half day leave
+more than three session missing apply for full days
+
+
+regulariing attendance 
+single swipe approver:
+nischith.s01@infosys.com
+leave approver:
+Raghvendra@infosys.com
+
+9.00AM to 7.00Pm call batch owner for urgent doubt 
+
+for issues educator related to particular course -> batch owner -> traxk nanager -> fp operations manager
+
+for other issues    batch owner-> tracker manager-> fp operations manager
+
+reahcx out to particular if issues not reolve at the previos level 
+
+
+UNIT TESTING AND TURTLE is not in syllabus
+

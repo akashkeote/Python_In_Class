@@ -1,0 +1,39 @@
+{
+  "employees": {
+    "1": {
+      "name": "Akash Keote",
+      "email": "akash@example.com",
+      "department": "Engineering",
+      "salary": 65000,
+      "is_active": true
+    },
+    "2": {
+      "name": "Priya Sharma",
+      "email": "priya@example.com",
+      "department": "Human Resources",
+      "salary": 58000,
+      "is_active": true
+    },
+    "3": {
+      "name": "Rahul Verma",
+      "email": "rahul@example.com",
+      "department": "Finance",
+      "salary": 62000,
+      "is_active": false
+    },
+    "4": {
+      "name": "Neha Patel",
+      "email": "neha@example.com",
+      "department": "Marketing",
+      "salary": 60000,
+      "is_active": true
+    },
+    "5": {
+      "name": "Vikram Singh",
+      "email": "vikram@example.com",
+      "department": "Sales",
+      "salary": 57000,
+      "is_active": true
+    }
+  }
+}
