@@ -149,6 +149,7 @@ class Emp(ABC):
 #direct object nahi banta hai
 # print(obj1.show())
 
+
 class RazerPay:
     def pay(self):
         print("RazerPay paying ...")
@@ -163,6 +164,25 @@ gateway1=RazerPay()
 purchase=Purchase(gateway1)
 
 purchase.checkout()
+
+class PayTm:
+    def pay(self):
+        print("Paytm karo ....")
+class RazerPay:
+    def pay(self):
+        print("RazerPay paying ...")
+
+class Purchase:
+    def __init__(self,gateway):
+        self.gateway=gateway
+    def checkout(self):
+        print("Checkout....")
+        self.gateway.pay()
+gateway1=
+purchase=Purchase()
+
+
+
 
 
 
