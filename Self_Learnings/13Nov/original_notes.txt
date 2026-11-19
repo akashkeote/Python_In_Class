@@ -173,6 +173,20 @@
   - Organizes data and behavior inside classes and objects.
 - **Inheritance**
   - Allows a specialized class to reuse and extend a general class.
+  - Generalization and Specialization
+  multiple
+  A    B
+     C 
+  hybrid
+       A 
+  B          C  
+       D   
+  multilevel
+     A
+     B 
+     C
+  
+
 - **Polymorphism**
   - Allows the same interface to work with different types.
   - Runtime polymorphism is commonly used in Python.
@@ -190,6 +204,23 @@
 - **Objective assessment**: 40 marks
   - 25% negative marking applies to objective questions.
 - **Hands-on assessment**: 40 marks
+
+Composite
+
+is a/type of /kind of - Inheritance
+has a /made of - COmposition
+type 
+1.typical compostion 
+  strong dependency 
+      car has a engine 
+      car doesnt exist without engoine
+2.aggregation
+  WEAK dependency
+      Lake has fish 
+      even without fish lakke exist
+
+Wheel Engine Stereo 
+      Car 
 
 
 

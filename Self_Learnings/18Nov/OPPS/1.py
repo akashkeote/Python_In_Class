@@ -3,13 +3,13 @@ class Emp:
 
 e=Emp()
 e2 = Emp()
-print(e==e2)
+print(e==e2,"false")
 
 print(isinstance(e,Emp))
 print(type(e))
 print(dir(Emp))
-# python follow the prototyping appraoch 
-# means we can create a class and then create an object of that class and then we can add attributes to that object.
+# Python prototyping approach follow karta hai.
+# Class ka object banne ke baad bhi usme naye attributes add kar sakte hain.
 e.salary = 10000
 e.name="John"
 print(e.name)
@@ -20,26 +20,22 @@ del e,e2
 
 class Emp:
     'class to represent an employee'
-    #hame self har bar likhna nahi padta 
-    #class level ke liye hi hum likhte hai self ko
+    # self instance ke liye hota hai; class-level values class ke naam se access hoti hain.
     empId=1000
+    count=0
     @staticmethod
     def whoami():
         return 'Emp Object'
-    def __init__(this,name='unknown',salary=0,age=0,grade=1): #initliazer hai na ki constructor hai ye
-        this.name=name
-        this.salary=salary
-        this.salary=salary
-        this.age=age
-        this.grade=grade
-        #PRIVATE BANANE KE LIYE
-        this._foo=100#private variable but not guaranteed in python private
-#constructor overloading is not possible in python but we can achieve the same by using default values in the constructor.
+    def __init__(self,name='unknown',salary=0,age=0,grade=1): # ye initializer hai; default values overloading jaisa kaam karti hain.
+        self.name=name
+        self.salary=salary
+        self.age=age
+        self.grade=grade
+        # Single underscore private convention hai, Python me strict private nahi hota.
+        self._foo=100
         Emp.count+=1
-        this.id=Emp.empId
+        self.id=Emp.empId
         Emp.empId+=1 #auto generate emp id
-        if Emp.count>1:
-            raise Exception('Only one object can be created')
 
     def __repr__(self): #shell repr
         return '<{},{},{},{}>'.format(self.name,self.salary,self.age,self.grade)
@@ -47,63 +43,76 @@ class Emp:
         return '{},{},{},{}'.format(self.name,self.salary,self.age,self.grade)
     def __add__(self,v):  #obj + v1+v2
         #if isinstance(v,Emp): #do something
+        isinstance(v,Emp)
+        if(type(self.salary)==type(v)):
+            self.salary+=v
+            return self
+
         self.salary+=v
         return self
-    def __radd__(self,v): #v + obj
+    def __radd__(self,v): # v + obj ke liye reverse addition.
         self.salary+=v
-    def __mod__(self,v): #obj % v
+        return self
+
+        return self + v
+    def __mod__(self,v): # obj % v se bonus percentage calculate hota hai.
         self.bonus=self.salary*(v/100)
-    def __it__(self,e): #obj < e
-        return 'abc'
+        return self.bonus
+    def __lt__(self,e): # obj < e salary comparison karta hai.
+        if isinstance(e,Emp):
+            return self.salary < e.salary
+    
     def compute_bonus(self): #methods
-        print(self.grade)
         if self.grade>=4:self.bonus = self.salary*20/100
         else: self.bonus = self.salary*10/100
 
-    def __del__(self): #destructor
-        print('Destructor called ')
-        Emp.count-=1
-
-    def __
+    def __del__(self): # object delete hone par destructor call ho sakta hai.
+        if Emp.count > 0:
+            Emp.count-=1
+        print('Destructor called')
 
 e=Emp('abc')
 print(e.name)
 print(e.age)
-# print(e.bonus) # INVOKE NAHI HUA HAI ABHI 
+# print(e.bonus) # Abhi compute_bonus() call nahi hua, isliye bonus available nahi hai.
 e.compute_bonus()
-print(e.bonus) # INVOKE HUA HAI ABHI 
-print(e._foo) #private variable but not guaranteed in python private
-print(dir(e)) # ye private variable ko bhi show karega
-e._foo=200 # ye bhi possible hai but ye private variable ko change kar raha hai
+print(e.bonus) # compute_bonus() call hone ke baad bonus available ho gaya.
+print(e._foo) # Single underscore private convention hai, guaranteed private nahi.
+print(dir(e)) # dir() private-convention wale attributes ko bhi dikhata hai.
+e._foo=200 # Bahar se bhi is attribute ko change karna possible hai.
 print(e._foo) 
 
-# print(e.__del__())#private variable ko delete karne ke liye ye method use karte hai
 print(e)
 print(e.name)
-#Unknown
-print(e._init__('def',1000,2,6)) # ye method ko call karne ke liye use karte hai
+# Existing object ki values reset karne ke liye __init__ manually call kar sakte hain.
+e.__init__('def',1000,2,6)
 print(e)
 print(e.name)
 print(e.salary)
-del e
+
+print(e.__doc__) # ye class ka docstring print karega.
+print(Emp.whoami()) # static method ko object ke bina call kar sakte hain.
+
 e=Emp()
-print(e.__doc__) # ye class ka docstring print karega
 
 e=Emp('abc',1000)
 print(e)
 print(e+100)
 e.compute_bonus()
 print(e.bonus)
-print(e%50)
+print(e%50) # salary ka 50 percent bonus calculate hota hai.
 print(e.bonus)
 e=Emp()
 print(e+5)
 print(e+5+  10)
 print(10+e)
-e1=emp()
+e1=Emp()
 print(e<e1)
 print(str(e))
 print()
+
+
+
 
 
 
