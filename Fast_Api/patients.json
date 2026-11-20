@@ -1,0 +1,42 @@
+{
+  "P001": {
+    "name": "Aarav Sharma",
+    "age": 34,
+    "gender": "Male",
+    "city": "Mumbai",
+    "diagnosis": "Hypertension",
+    "phone": "+91-9000000001"
+  },
+  "P002": {
+    "name": "Priya Patel",
+    "age": 28,
+    "gender": "Female",
+    "city": "Ahmedabad",
+    "diagnosis": "Type 2 Diabetes",
+    "phone": "+91-9000000002"
+  },
+  "P003": {
+    "name": "Rohan Mehta",
+    "age": 45,
+    "gender": "Male",
+    "city": "Pune",
+    "diagnosis": "Asthma",
+    "phone": "+91-9000000003"
+  },
+  "P004": {
+    "name": "Ananya Iyer",
+    "age": 39,
+    "gender": "Female",
+    "city": "Bengaluru",
+    "diagnosis": "Migraine",
+    "phone": "+91-9000000004"
+  },
+  "P005": {
+    "name": "Vikram Singh",
+    "age": 52,
+    "gender": "Male",
+    "city": "New Delhi",
+    "diagnosis": "Arthritis",
+    "phone": "+91-9000000005"
+  }
+}
