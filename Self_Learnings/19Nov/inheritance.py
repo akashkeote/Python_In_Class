@@ -149,8 +149,11 @@ class Emp(ABC):
 #direct object nahi banta hai
 # print(obj1.show())
 
-
-class RazerPay:
+class PaymentGatway(ABC):
+    @abstractmethod
+    def pay(self):
+        pass
+class RazerPay(PaymentGatway):
     def pay(self):
         print("RazerPay paying ...")
 class Purchase:
@@ -178,8 +181,10 @@ class Purchase:
     def checkout(self):
         print("Checkout....")
         self.gateway.pay()
-gateway1=
-purchase=Purchase()
+gateway2=PayTm()
+gateway1=RazerPay()
+purchase=Purchase(gateway2)
+purchase.checkout()
 
 
 

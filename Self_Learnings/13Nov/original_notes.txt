@@ -222,8 +222,26 @@ type
 Wheel Engine Stereo 
       Car 
 
+numpy
+  BSD 
+  pip install numpy (third party lib)
+  tensor/vector/matrix
+  Clang,FFI with python
+  10x speedup
+  exploit multiprocessing and vectorization
+  SIMD() and MIMD()
+  
+pandas
+ bult using numpy
+ series- arrays + labels
+ data frames - 2d excel sheets
+ rwo - observations / record
+ column - features / attributes
+ targets - 
+ now a days we have polaris lib jo pandas se bhi speed chalti hai
 
-
+ name,age,gender,race
+ abc,23,M,Indian
 
 
 
